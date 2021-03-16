@@ -32,11 +32,11 @@ NewIncident.click()
 
 CustomerField = driver.find_element_by_xpath('//div[@id="WIN_3_303530000"]/textarea')
 CustomerField.click()
-driver.execute_script('document.getElementById("arid_WIN_3_303530000").value="bijmoh";') #using JS to send text as sendkeys() method too slow
+driver.execute_script('document.getElementById("arid_WIN_3_303530000").value="##";') #using JS to send text as sendkeys() method too slow
 CustomerField.send_keys(Keys.ENTER)
 
 ContactField = driver.find_element_by_id('arid_WIN_3_303497600')
-driver.execute_script('document.getElementById("arid_WIN_3_303497600").value="bijmoh";')
+driver.execute_script('document.getElementById("arid_WIN_3_303497600").value="##";')
 ContactField.send_keys(Keys.ENTER)
 
 
